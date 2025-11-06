@@ -19,7 +19,8 @@ const payRoutes = require("./Routes/payRoutes.js");
 const PORT = process.env.PORT || 4000
 
 app.use(cors({
-    origin: ["http://localhost:5173" , "https://skillswap-frontend-xi.vercel.app"],
+    origin: ["http://localhost:5173" , 
+          "https://skillswap-frontend-rvkn.vercel.app"],
     methods: ["GET", "POST"],
 }));
 
