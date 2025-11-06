@@ -18,7 +18,10 @@ const payRoutes = require("./Routes/payRoutes.js");
 
 const PORT = process.env.PORT || 4000
 
-app.use(cors());
+app.use(cors({
+    origin: ["http://localhost:5173" , "https://skillswap-frontend-xi.vercel.app"],
+    methods: ["GET", "POST"],
+}));
 
 app.use(express.json());
 app.use('/api', require('./Routes/CreateUser'));
