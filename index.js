@@ -11,7 +11,7 @@ const cors = require('cors');
 const payRoutes = require("./Routes/payRoutes.js");
 
 
-const { socket } = require('../frontend/src/utils/socket.js');
+// const { socket } = require('../frontend/src/utils/socket.js');
 
 
 // const port = process.env.PORT;
